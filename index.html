@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                
+    <div class="container1">
+    <form name="form1"> 
+        <input  id="display"type = "text" name="answer" placeholder="YASH CALCULATOR" disabled>
+        <br><br>
+        <input type="button"value="+" onclick="form1.answer.value  +='+' " id="plus">
+        <input type="button"value="-" onclick="form1.answer.value  +='-' " id="minus">
+        <input type="button"value="*" onclick="form1.answer.value  +='*' " id="multiply">
+        <input type="button"value="/" onclick="form1.answer.value  +='/' " id="divide">
+        <br><br>
+        <div class="container2">
+        <div class="2">
+        <input type="button"value="7" onclick="form1.answer.value  +='7' " id="block7">
+        <input type="button"value="8" onclick="form1.answer.value  +='8' " id="block8">
+        <input type="button"value="9" onclick="form1.answer.value  +='9' " id="block9">
+        <br><br>
+        <input type="button"value="4" onclick="form1.answer.value  +='4' " id="block4">
+        <input type="button"value="5" onclick="form1.answer.value  +='5' " id="block5">
+        <input type="button"value="6" onclick="form1.answer.value  +='6' " id="block6">
+        <br><br>
+        <input type="button"value="1" onclick="form1.answer.value  +='1' " id="block1">
+        <input type="button"value="2" onclick="form1.answer.value  +='2' " id="block2">
+        <input type="button"value="3" onclick="form1.answer.value  +='3' " id="block3">
+        <br><br>
+        <input type="button"value="0" onclick="form1.answer.value  +='0' " id="block0">
+        <input type="button"value="." onclick="form1.answer.value  +='.' " id="dot">
+        <input type="button"value="clear" onclick="form1.answer.value  =' ' " id="clr">
+        </div>
+        <div>
+        <input type="button"value="=" onclick="form1.answer.value  =eval(form1.answer.value) " id="ans">
+        </div>
+        </div>
+    </form>
+</body>
+</html>
